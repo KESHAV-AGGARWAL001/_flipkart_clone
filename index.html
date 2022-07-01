@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>flipkart clone</title>
+  </head>
+  <body class="bg-gray-300">
+    <!-- this is for just making search bar and login buttons  -->
+    <header
+      class="justify-center items-center mx-auto grid grid-flow-col text-center space-x-3 w-full h-[70px] bg-blue-500"
+    >
+      <!-- there will be three divs  and i will make them flex -->
+      <!-- first one will contain the flipkart logo  -->
+      <div class="flex flex-col bg-blue-500">
+        <a href="https://flipkart.com">
+          <img
+            src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_8d85f4.png"
+            alt="flipkart logo"
+            class="w-[70px] h-[20px] mt-3 mb-0"
+          />
+        </a>
+        <div class="flex flex-row hover:underline">
+          <a href="#" class="italic text-white">EXPLORE</a>
+          <a href="#" class="italic text-yellow-300">PLUS</a>
+          <img
+            src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/plus_aef861.png"
+            alt="logo"
+            class="w-5 h-5 ml-1"
+          />
+        </div>
+      </div>
+      <!-- second one will contain search box -->
+      <div class="grid grid-flow-col w-[600px] h-[30px] space-x-3 my-2">
+        <button
+          class="flex flex-row justify-between bg-white border-0 rounded-md"
+        >
+          <input
+            type="text"
+            placeholder="Search for products brands and more"
+            class="placeholder:text-gray-400 mx-2 outline-white focus:border-0 hover:border-0 my-2 w-[400px] h-[26px]"
+          />
+          <img
+            src="https://cdn-icons.flaticon.com/png/128/5948/premium/5948471.png?token=exp=1651814524~hmac=585cd48bc45be7397db6da475f9e965e"
+            alt="search button"
+            class="w-5 h-5 m-3"
+          />
+        </button>
+        <button class="bg-white text-blue-400 px-4 py-1 rounded-md">
+          login
+        </button>
+      </div>
+
+      <!-- third one will contain words  -->
+      <div class="grid grid-flow-col space-x-5">
+        <a href="" class="text-white font-semibold my-5"> Become a seller</a>
+        <a href="" class="text-white font-semiboldbold my-5"> More</a>
+        <button
+          class="grid grid-flow-col space-x-2 bg-blue-500 my-5 text-white border-0"
+        >
+          <a href="#">
+            <img
+              src="https://cdn-icons.flaticon.com/png/128/4357/premium/4357449.png?token=exp=1651814804~hmac=53b9a3ecfe8f474befad78de73b087b1"
+              alt="cart image"
+              class="w-6 h-6"
+            />
+          </a>
+          <a href="#" class="">Cart</a>
+        </button>
+      </div>
+    </header>
+    <section class="grid grid-flow-col space-x-5 my-3 mx-10 w-[1440px] bg-white ">
+      <!-- all div will contain  a photo and its identification-->
+      <div class="grid grid-flow-row justify-center text-center space-y-1 my-[10px] ">
+        <img
+        src="https://rukminim2.flixcart.com/image/416/416/ksj9dow0/mobile/k/u/x/y21-v2111-vivo-original-imag627urx8mhhqm.jpeg?q=70"
+        class="rounded-full w-12 h-12 "
+        />
+        <h4 class="text-black hover:text-blue-500">Mobiles</h4>
+      </div>
+      <div class="grid grid-flow-row justify-center text-center space-y-1 my-[10px] ">
+        <img
+          src="https://th.bing.com/th/id/OIP.e_MyQ2fNEdff2aM3U-7INQHaEK?w=328&h=184&c=7&r=0&o=5&dpr=1.25&pid=1.7"
+          class="rounded-full w-12 h-12"
+          />
+          <h6 class="text-black hover:text-blue-500">Fashion</h6>
+        </div>
+        <div class="grid grid-flow-row justify-center text-center space-y-1 my-[10px] ">
+          <img
+          src="https://th.bing.com/th/id/OIP.NJG4oVGmaxLaO14e3nlAMgHaEB?w=281&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7"
+          class="rounded-full w-12 h-12"
+          />
+          <h6 class="text-black hover:text-blue-500">Electronics</h6>
+        </div>
+        <div class="grid grid-flow-row justify-center text-center space-y-1 my-[10px] " >
+          <img
+          src="https://th.bing.com/th/id/OIP.fFF3Uo8Gp2ROms2DO3nbxwHaEK?w=302&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7"
+          class="rounded-full w-12 h-12"
+          />
+          <h6 class="text-black hover:text-blue-500">Home</h6>
+        </div>
+        <div class="grid grid-flow-row justify-center text-center space-y-1 my-[10px] ">
+          <img
+          src="https://th.bing.com/th/id/OIP.6tJFpwVuTqv3RtaqTdoTrQHaEK?w=310&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7"
+          class="rounded-full w-12 h-12"
+          />
+          <h6 class="text-black hover:text-blue-500">Travel</h6>
+        </div>
+        <div class="grid grid-flow-row justify-center text-center space-y-1 my-[10px] ">
+          <img
+          src="https://th.bing.com/th/id/OIP.q7MHLZm8-Z62OfMubDGXKwHaFD?w=280&h=191&c=7&r=0&o=5&dpr=1.25&pid=1.7"
+          class="rounded-full w-12 h-12"
+          />
+          <h6 class="text-black hover:text-blue-500">Appliances</h6>
+        </div>
+        <div class="grid grid-flow-row justify-center text-center space-y-1 my-[10px] ">
+          <img
+            src="https://rukminim2.flixcart.com/image/416/416/ksj9dow0/mobile/k/u/x/y21-v2111-vivo-original-imag627urx8mhhqm.jpeg?q=70"
+            class="rounded-full w-12 h-12 "
+          />
+          <h4 class="text-black hover:text-blue-500">Mobiles</h4>
+        </div>
+        <div class="grid grid-flow-row justify-center text-center space-y-1 my-[10px] ">
+        <img
+          src="https://th.bing.com/th/id/OIP.KIJb91aCu1fFU8ECR0ZscQHaGR?w=221&h=188&c=7&r=0&o=5&dpr=1.25&pid=1.7"
+          class="rounded-full w-12 h-12"
+        />
+        <h6 class="text-black hover:text-blue-500">Furniture</h6>
+      </div>
+      <div class="grid grid-flow-row justify-center text-center space-y-1 my-[10px] ">
+        <img
+          src="https://th.bing.com/th/id/OIP.brxWGbFTB2s0F1L3zWXnTgHaFf?w=219&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7"
+          class="rounded-full w-12 h-12"
+        />
+        <h6 class="text-black hover:text-blue-500">Products</h6>
+      </div>
+    </section>
+    <section class="w-full h-3 bg-slate-300"></section>
+    <section class="w-fit h-[300px]">
+      <img
+        src="	https://rukminim2.flixcart.com/flap/844/140/image/9ae7b9f67770680b.jpg?q=50"
+        class="w-full h-[300px]"
+      />
+    </section>
+    <hr />
+    <section
+      class="grid grid-flow-col overflow-hidden justify-center items-center text-center space-x-3 my-1 mx-1 "
+    >
+      <div>
+        <h1 class="mt-20 text-3xl font-normal mb-4">Top Offers</h1>
+        <button class="bg-blue-600 rounded-md mb-2 text-white py-2 px-4">
+          VIEW ALL
+        </button>
+        <img
+          src="https://rukminim1.flixcart.com/flap/278/278/image/59baca52495f46bb.jpg?q=90"
+          class="w-60 h-30"
+        />
+      </div>
+      <div>
+        <img
+          src="https://rukminim2.flixcart.com/image/200/200/kdt50nk0/portable-laptop-table/m/h/g/plywood-c45c-lsm-furn-master-blue-original-imafumzmu9xqzvxw.jpeg?q=70"
+          class="w-60 h-30 mt-5 hover:scale-105"
+        />
+        <h1 class="mt-4 font-semibold">Portable Laptop Table</h1>
+        <h2 class="text-green-600">From ₹399</h2>
+        <h6 class="text-gray-300">Glass, PLastic, Wood..</h6>
+      </div>
+      </div>
+      <div>
+        <img
+          src="https://rukminim2.flixcart.com/image/200/200/kdt50nk0/portable-laptop-table/m/h/g/plywood-c45c-lsm-furn-master-blue-original-imafumzmu9xqzvxw.jpeg?q=70"
+          class="w-60 h-30 mt-5 hover:scale-105"
+        />
+        <h1 class="mt-4 font-semibold">Portable Laptop Table</h1>
+        <h2 class="text-green-600">From ₹399</h2>
+        <h6 class="text-gray-300">Glass, PLastic, Wood..</h6>
+      </div>
+      </div>
+      <div>
+        <img
+          src="https://rukminim2.flixcart.com/image/200/200/kdt50nk0/portable-laptop-table/m/h/g/plywood-c45c-lsm-furn-master-blue-original-imafumzmu9xqzvxw.jpeg?q=70"
+          class="w-60 h-30 mt-5 hover:scale-105"
+        />
+        <h1 class="mt-4 font-semibold">Portable Laptop Table</h1>
+        <h2 class="text-green-600">From ₹399</h2>
+        <h6 class="text-gray-300">Glass, PLastic, Wood..</h6>
+      </div>
+      </div>
+      <div>
+        <img
+          src="https://rukminim2.flixcart.com/image/200/200/kdt50nk0/portable-laptop-table/m/h/g/plywood-c45c-lsm-furn-master-blue-original-imafumzmu9xqzvxw.jpeg?q=70"
+          class="w-60 h-30 mt-5 hover:scale-105"
+        />
+        <h1 class="mt-4 font-semibold">Portable Laptop Table</h1>
+        <h2 class="text-green-600">From ₹399</h2>
+        <h6 class="text-gray-300">Glass, PLastic, Wood..</h6>
+      </div>
+      </div>
+      <div>
+        <img
+          src="https://rukminim2.flixcart.com/image/200/200/kdt50nk0/portable-laptop-table/m/h/g/plywood-c45c-lsm-furn-master-blue-original-imafumzmu9xqzvxw.jpeg?q=70"
+          class="w-60 h-30 mt-5 hover:scale-105"
+        />
+        <h1 class="mt-4 font-semibold">Portable Laptop Table</h1>
+        <h2 class="text-green-600">From ₹399</h2>
+        <h6 class="text-gray-300">Glass, PLastic, Wood..</h6>
+      </div>
+      </div>
+      <div>
+        <img
+          src="https://rukminim2.flixcart.com/image/200/200/kdt50nk0/portable-laptop-table/m/h/g/plywood-c45c-lsm-furn-master-blue-original-imafumzmu9xqzvxw.jpeg?q=70"
+          class="w-60 h-30 mt-5 hover:scale-105"
+        />
+        <h1 class="mt-4 font-semibold">Portable Laptop Table</h1>
+        <h2 class="text-green-600">From ₹399</h2>
+        <h6 class="text-gray-300">Glass, PLastic, Wood..</h6>
+      </div>
+     
+    </section>
+    <section class="grid grid-flow-col space-x-1 mx-8 ">
+     <img src="https://th.bing.com/th/id/OIP.fiOyJyNn6QMyk9YEY2CQeAHaET?w=303&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7" alt="" class="w-[450px] h-[240px]">
+     <img src="https://th.bing.com/th/id/OIP.fiOyJyNn6QMyk9YEY2CQeAHaET?w=303&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7" alt="" class="w-[450px] h-[240px]">
+     <img src="https://th.bing.com/th/id/OIP.fiOyJyNn6QMyk9YEY2CQeAHaET?w=303&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7" alt="" class="w-[450px] h-[240px]">
+    </section>
+    <section class="grid grid-flow-col space-x-2 mx-8 mt-3">
+        <img src="https://th.bing.com/th/id/OIP.fiOyJyNn6QMyk9YEY2CQeAHaET?w=303&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7" alt="" class="w-[450px] h-[240px]">
+        <img src="https://th.bing.com/th/id/OIP.fiOyJyNn6QMyk9YEY2CQeAHaET?w=303&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7" alt="" class="w-[450px] h-[240px]">
+        <img src="https://th.bing.com/th/id/OIP.fiOyJyNn6QMyk9YEY2CQeAHaET?w=303&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7" alt="" class="w-[450px] h-[240px]"> 
+    </section>
+    <section
+    class="grid grid-flow-col overflow-hidden justify-center items-center text-center space-x-3 my-1 mx-1 "
+  >
+    <div>
+      <h1 class="mt-20 text-3xl font-normal mb-4">Top Deals on Fashion</h1>
+      <button class="bg-blue-600 rounded-md mb-2 text-white py-2 px-4">
+        VIEW ALL
+      </button>
+      <img
+        src="https://rukminim1.flixcart.com/flap/278/278/image/59baca52495f46bb.jpg?q=90"
+        class="w-60 h-30"
+      />
+    </div>
+    <div>
+      <img
+        src="https://rukminim2.flixcart.com/image/200/200/kdt50nk0/portable-laptop-table/m/h/g/plywood-c45c-lsm-furn-master-blue-original-imafumzmu9xqzvxw.jpeg?q=70"
+        class="w-60 h-30 mt-5 hover:scale-105"
+      />
+      <h1 class="mt-4 font-semibold">Portable Laptop Table</h1>
+      <h2 class="text-green-600">From ₹399</h2>
+      <h6 class="text-gray-300">Glass, PLastic, Wood..</h6>
+    </div>
+    </div>
+    <div>
+      <img
+        src="https://rukminim2.flixcart.com/image/200/200/kdt50nk0/portable-laptop-table/m/h/g/plywood-c45c-lsm-furn-master-blue-original-imafumzmu9xqzvxw.jpeg?q=70"
+        class="w-60 h-30 mt-5 hover:scale-105"
+      />
+      <h1 class="mt-4 font-semibold">Portable Laptop Table</h1>
+      <h2 class="text-green-600">From ₹399</h2>
+      <h6 class="text-gray-300">Glass, PLastic, Wood..</h6>
+    </div>
+    </div>
+    <div>
+      <img
+        src="https://rukminim2.flixcart.com/image/200/200/kdt50nk0/portable-laptop-table/m/h/g/plywood-c45c-lsm-furn-master-blue-original-imafumzmu9xqzvxw.jpeg?q=70"
+        class="w-60 h-30 mt-5 hover:scale-105"
+      />
+      <h1 class="mt-4 font-semibold">Portable Laptop Table</h1>
+      <h2 class="text-green-600">From ₹399</h2>
+      <h6 class="text-gray-300">Glass, PLastic, Wood..</h6>
+    </div>
+    </div>
+    <div>
+      <img
+        src="https://rukminim2.flixcart.com/image/200/200/kdt50nk0/portable-laptop-table/m/h/g/plywood-c45c-lsm-furn-master-blue-original-imafumzmu9xqzvxw.jpeg?q=70"
+        class="w-60 h-30 mt-5 hover:scale-105"
+      />
+      <h1 class="mt-4 font-semibold">Portable Laptop Table</h1>
+      <h2 class="text-green-600">From ₹399</h2>
+      <h6 class="text-gray-300">Glass, PLastic, Wood..</h6>
+    </div>
+    </div>
+    <div>
+      <img
+        src="https://rukminim2.flixcart.com/image/200/200/kdt50nk0/portable-laptop-table/m/h/g/plywood-c45c-lsm-furn-master-blue-original-imafumzmu9xqzvxw.jpeg?q=70"
+        class="w-60 h-30 mt-5 hover:scale-105"
+      />
+      <h1 class="mt-4 font-semibold">Portable Laptop Table</h1>
+      <h2 class="text-green-600">From ₹399</h2>
+      <h6 class="text-gray-300">Glass, PLastic, Wood..</h6>
+    </div>
+    </div>
+    <div>
+      <img
+        src="https://rukminim2.flixcart.com/image/200/200/kdt50nk0/portable-laptop-table/m/h/g/plywood-c45c-lsm-furn-master-blue-original-imafumzmu9xqzvxw.jpeg?q=70"
+        class="w-60 h-30 mt-5 hover:scale-105"
+      />
+      <h1 class="mt-4 font-semibold">Portable Laptop Table</h1>
+      <h2 class="text-green-600">From ₹399</h2>
+      <h6 class="text-gray-300">Glass, PLastic, Wood..</h6>
+    </div>
+   
+  </section>
+  <section class="m-1 bg-white rounded-md">
+    <h1 class="text-black pt-3 pb-2 mx-3 font-semibold text-xl">Featured Brands</h1>
+    <div class="grid grid-flow-col overflow-hidden space-x-4 px-7 pt-4 pb-3 ">
+      <img src="https://rukminim2.flixcart.com/image/416/416/kzpw2vk0/smartwatch/k/x/i/-original-imagbnnrs7ngq8w6.jpeg?q=70" alt="" class="w-[300px] h-[250px] hover:scale-x-105 hover:shadow-md shadow-slate-700 hover:border-4 border-solid border-red-300 rounded-md">
+      <img src="https://rukminim2.flixcart.com/image/416/416/kzpw2vk0/smartwatch/k/x/i/-original-imagbnnrs7ngq8w6.jpeg?q=70" alt="" class="w-[300px] h-[250px] hover:scale-x-105 hover:shadow-md shadow-slate-700 hover:border-4 border-solid border-red-300 rounded-md">
+      <img src="https://rukminim2.flixcart.com/image/416/416/kzpw2vk0/smartwatch/k/x/i/-original-imagbnnrs7ngq8w6.jpeg?q=70" alt="" class="w-[300px] h-[250px] hover:scale-x-105 hover:shadow-md shadow-slate-700 hover:border-4 border-solid border-red-300 rounded-md">
+      <img src="https://rukminim2.flixcart.com/image/416/416/kzpw2vk0/smartwatch/k/x/i/-original-imagbnnrs7ngq8w6.jpeg?q=70" alt="" class="w-[300px] h-[250px] hover:scale-x-105 hover:shadow-md shadow-slate-700 hover:border-4 border-solid border-red-300 rounded-md">
+    </div>
+  </section>
+  <section
+  class="grid grid-flow-col overflow-hidden justify-center items-center text-center space-x-3 my-1 mx-1 "
+>
+  <div>
+    <h1 class="mt-20 text-3xl font-normal mb-4">Top Deals on Electronics</h1>
+    <button class="bg-blue-600 rounded-md mb-2 text-white py-2 px-4">
+      VIEW ALL
+    </button>
+    <img
+      src="https://rukminim1.flixcart.com/flap/278/278/image/59baca52495f46bb.jpg?q=90"
+      class="w-60 h-30"
+    />
+  </div>
+  <div>
+    <img
+      src="https://rukminim2.flixcart.com/image/200/200/kdt50nk0/portable-laptop-table/m/h/g/plywood-c45c-lsm-furn-master-blue-original-imafumzmu9xqzvxw.jpeg?q=70"
+      class="w-60 h-30 mt-5 hover:scale-105"
+    />
+    <h1 class="mt-4 font-semibold">Portable Laptop Table</h1>
+    <h2 class="text-green-600">From ₹399</h2>
+    <h6 class="text-gray-300">Glass, PLastic, Wood..</h6>
+  </div>
+  </div>
+  <div>
+    <img
+      src="https://rukminim2.flixcart.com/image/200/200/kdt50nk0/portable-laptop-table/m/h/g/plywood-c45c-lsm-furn-master-blue-original-imafumzmu9xqzvxw.jpeg?q=70"
+      class="w-60 h-30 mt-5 hover:scale-105"
+    />
+    <h1 class="mt-4 font-semibold">Portable Laptop Table</h1>
+    <h2 class="text-green-600">From ₹399</h2>
+    <h6 class="text-gray-300">Glass, PLastic, Wood..</h6>
+  </div>
+  </div>
+  <div>
+    <img
+      src="https://rukminim2.flixcart.com/image/200/200/kdt50nk0/portable-laptop-table/m/h/g/plywood-c45c-lsm-furn-master-blue-original-imafumzmu9xqzvxw.jpeg?q=70"
+      class="w-60 h-30 mt-5 hover:scale-105"
+    />
+    <h1 class="mt-4 font-semibold">Portable Laptop Table</h1>
+    <h2 class="text-green-600">From ₹399</h2>
+    <h6 class="text-gray-300">Glass, PLastic, Wood..</h6>
+  </div>
+  </div>
+  <div>
+    <img
+      src="https://rukminim2.flixcart.com/image/200/200/kdt50nk0/portable-laptop-table/m/h/g/plywood-c45c-lsm-furn-master-blue-original-imafumzmu9xqzvxw.jpeg?q=70"
+      class="w-60 h-30 mt-5 hover:scale-105"
+    />
+    <h1 class="mt-4 font-semibold">Portable Laptop Table</h1>
+    <h2 class="text-green-600">From ₹399</h2>
+    <h6 class="text-gray-300">Glass, PLastic, Wood..</h6>
+  </div>
+  </div>
+  <div>
+    <img
+      src="https://rukminim2.flixcart.com/image/200/200/kdt50nk0/portable-laptop-table/m/h/g/plywood-c45c-lsm-furn-master-blue-original-imafumzmu9xqzvxw.jpeg?q=70"
+      class="w-60 h-30 mt-5 hover:scale-105"
+    />
+    <h1 class="mt-4 font-semibold">Portable Laptop Table</h1>
+    <h2 class="text-green-600">From ₹399</h2>
+    <h6 class="text-gray-300">Glass, PLastic, Wood..</h6>
+  </div>
+  </div>
+  <div>
+    <img
+      src="https://rukminim2.flixcart.com/image/200/200/kdt50nk0/portable-laptop-table/m/h/g/plywood-c45c-lsm-furn-master-blue-original-imafumzmu9xqzvxw.jpeg?q=70"
+      class="w-60 h-30 mt-5 hover:scale-105"
+    />
+    <h1 class="mt-4 font-semibold">Portable Laptop Table</h1>
+    <h2 class="text-green-600">From ₹399</h2>
+    <h6 class="text-gray-300">Glass, PLastic, Wood..</h6>
+  </div>
+ 
+</section>
+<section class="grid grid-flow-col my-3 justify-items-center ">
+  <div class="bg-indigo-700  rounded-md">
+    <h1 class="font-bold text-6xl px-16 text-white">UNDER</h1>
+    <div class="flex flex-row text-center justify-center">
+      <h6 class="text-white text-4xl ">₹</h6>
+      <h1 class="text-white text-6xl ">199</h1>
+    </div>
+  </div> 
+  <div class="bg-indigo-700  rounded-md">
+    <h1 class="font-bold text-6xl px-16 text-white">UNDER</h1>
+    <div class="flex flex-row text-center justify-center">
+      <h6 class="text-white text-4xl ">₹</h6>
+      <h1 class="text-white text-6xl ">199</h1>
+    </div>
+</div> 
+<div class="bg-indigo-700  rounded-md">
+  <h1 class="font-bold text-6xl px-16 text-white">UNDER</h1>
+  <div class="flex flex-row text-center justify-center">
+    <h6 class="text-white text-4xl ">₹</h6>
+    <h1 class="text-white text-6xl ">199</h1>
+  </div>
+</div> 
+<div class="bg-indigo-700  rounded-md">
+  <h1 class="font-bold text-6xl px-16 text-white">UNDER</h1>
+  <div class="flex flex-row text-center justify-center">
+    <h6 class="text-white text-4xl ">₹</h6>
+    <h1 class="text-white text-6xl ">199</h1>
+  </div>
+</div> 
+</section>
+
+<section
+class="grid grid-flow-col overflow-hidden justify-center items-center text-center space-x-3 my-1 mx-1 "
+>
+<div>
+  <h1 class="mt-20 text-3xl font-normal mb-4">Top Deals on Shoes</h1>
+  <button class="bg-blue-600 rounded-md mb-2 text-white py-2 px-4">
+    VIEW ALL
+  </button>
+  <img
+  src="https://rukminim1.flixcart.com/flap/278/278/image/59baca52495f46bb.jpg?q=90"
+    class="w-60 h-30"
+  />
+</div>
+<div>
+  <img
+  src="https://rukminim2.flixcart.com/image/200/200/ku8pbbk0/shoe/j/j/9/6-386922-puma-peacoat-high-risk-red-original-imag7et2fbxnrnhc.jpeg?q=70"
+  class="w-60 h-30 mt-5 hover:scale-105"
+  />
+  <h1 class="mt-4 font-semibold">Puma Shoes</h1>
+  <h2 class="text-green-600">From ₹1399</h2>
+  <h6 class="text-gray-300">leather , rubber..</h6>
+</div>
+</div>
+<div>
+  <img
+  src="https://rukminim2.flixcart.com/image/200/200/ku8pbbk0/shoe/j/j/9/6-386922-puma-peacoat-high-risk-red-original-imag7et2fbxnrnhc.jpeg?q=70"
+  class="w-60 h-30 mt-5 hover:scale-105"
+  />
+  <h1 class="mt-4 font-semibold">Puma Shoes</h1>
+  <h2 class="text-green-600">From ₹1399</h2>
+  <h6 class="text-gray-300">leather , rubber..</h6>
+</div>
+</div>
+<div>
+  <img
+  src="https://rukminim2.flixcart.com/image/200/200/ku8pbbk0/shoe/j/j/9/6-386922-puma-peacoat-high-risk-red-original-imag7et2fbxnrnhc.jpeg?q=70"
+  class="w-60 h-30 mt-5 hover:scale-105"
+  />
+  <h1 class="mt-4 font-semibold">Puma Shoes</h1>
+  <h2 class="text-green-600">From ₹1399</h2>
+  <h6 class="text-gray-300">leather , rubber..</h6>
+</div>
+</div>
+<div>
+  <img
+  src="https://rukminim2.flixcart.com/image/200/200/ku8pbbk0/shoe/j/j/9/6-386922-puma-peacoat-high-risk-red-original-imag7et2fbxnrnhc.jpeg?q=70"
+  class="w-60 h-30 mt-5 hover:scale-105"
+  />
+  <h1 class="mt-4 font-semibold">Puma Shoes</h1>
+  <h2 class="text-green-600">From ₹1399</h2>
+  <h6 class="text-gray-300">leather , rubber..</h6>
+</div>
+</div>
+<div>
+  <img
+  src="https://rukminim2.flixcart.com/image/200/200/ku8pbbk0/shoe/j/j/9/6-386922-puma-peacoat-high-risk-red-original-imag7et2fbxnrnhc.jpeg?q=70"
+  class="w-60 h-30 mt-5 hover:scale-105"
+  />
+  <h1 class="mt-4 font-semibold">Puma Shoes</h1>
+  <h2 class="text-green-600">From ₹1399</h2>
+  <h6 class="text-gray-300">leather , rubber..</h6>
+</div>
+</div>
+<div>
+  <img
+  src="https://rukminim2.flixcart.com/image/200/200/ku8pbbk0/shoe/j/j/9/6-386922-puma-peacoat-high-risk-red-original-imag7et2fbxnrnhc.jpeg?q=70"
+  class="w-60 h-30 mt-5 hover:scale-105"
+  />
+  <h1 class="mt-4 font-semibold">Puma Shoes</h1>
+  <h2 class="text-green-600">From ₹1399</h2>
+  <h6 class="text-gray-300">leather , rubber..</h6>
+</div>
+
+</section>
+
+<section
+class="grid grid-flow-col overflow-hidden justify-center items-center text-center space-x-3 my-1 mx-1 "
+>
+<div>
+  <h1 class="mt-20 text-3xl font-normal mb-4">Top Deals on Tshirts</h1>
+  <button class="bg-blue-600 rounded-md mb-2 text-white py-2 px-4">
+    VIEW ALL
+  </button>
+  <img
+    src="https://rukminim1.flixcart.com/flap/278/278/image/59baca52495f46bb.jpg?q=90"
+    class="w-60 h-30"
+  />
+</div>
+<div>
+  <img
+    src="https://rukminim2.flixcart.com/image/200/200/jxrv4i80/vest/x/w/x/xxl-mrt19-vest39-gold-metronaut-original-imafg5mxhyys2dda.jpeg?q=70"
+    class="w-60 h-30 mt-5 hover:scale-105"
+  />
+  <h1 class="mt-4 font-semibold">Puma Tshirt</h1>
+  <h2 class="text-green-600">From ₹1399</h2>
+  <h6 class="text-gray-300">leather , cotton , khadi </h6>
+</div>
+</div>
+<div>
+  <img
+    src="https://rukminim2.flixcart.com/image/200/200/jxrv4i80/vest/x/w/x/xxl-mrt19-vest39-gold-metronaut-original-imafg5mxhyys2dda.jpeg?q=70"
+    class="w-60 h-30 mt-5 hover:scale-105"
+  />
+  <h1 class="mt-4 font-semibold">Puma Tshirt</h1>
+  <h2 class="text-green-600">From ₹1399</h2>
+  <h6 class="text-gray-300">leather , cotton , khadi </h6>
+</div>
+</div>
+<div>
+  <img
+    src="https://rukminim2.flixcart.com/image/200/200/jxrv4i80/vest/x/w/x/xxl-mrt19-vest39-gold-metronaut-original-imafg5mxhyys2dda.jpeg?q=70"
+    class="w-60 h-30 mt-5 hover:scale-105"
+  />
+  <h1 class="mt-4 font-semibold">Puma Tshirt</h1>
+  <h2 class="text-green-600">From ₹1399</h2>
+  <h6 class="text-gray-300">leather , cotton , khadi </h6>
+</div>
+</div>
+<div>
+  <img
+    src="https://rukminim2.flixcart.com/image/200/200/jxrv4i80/vest/x/w/x/xxl-mrt19-vest39-gold-metronaut-original-imafg5mxhyys2dda.jpeg?q=70"
+    class="w-60 h-30 mt-5 hover:scale-105"
+  />
+  <h1 class="mt-4 font-semibold">Puma Tshirt</h1>
+  <h2 class="text-green-600">From ₹1399</h2>
+  <h6 class="text-gray-300">leather , cotton , khadi .</h6>
+</div>
+</div>
+<div>
+  <img
+    src="https://rukminim2.flixcart.com/image/200/200/jxrv4i80/vest/x/w/x/xxl-mrt19-vest39-gold-metronaut-original-imafg5mxhyys2dda.jpeg?q=70"
+    class="w-60 h-30 mt-5 hover:scale-105"
+  />
+  <h1 class="mt-4 font-semibold">Puma Tshirt</h1>
+  <h2 class="text-green-600">From ₹1399</h2>
+  <h6 class="text-gray-300">leather , cotton , khadi </h6>
+</div>
+</div>
+<div>
+  <img
+    src="https://rukminim2.flixcart.com/image/200/200/jxrv4i80/vest/x/w/x/xxl-mrt19-vest39-gold-metronaut-original-imafg5mxhyys2dda.jpeg?q=70"
+    class="w-60 h-30 mt-5 hover:scale-105"
+  />
+  <h1 class="mt-4 font-semibold">Puma Tshirt</h1>
+  <h2 class="text-green-600">From ₹1399</h2>
+  <h6 class="text-gray-300">leather , cotton , khadi </h6>
+</div>
+
+</section>
+
+<section class="px-2 w-[1500px] h-[500px]">
+  <h6 class="font-extralight cursive text-black ">
+    <h1>Top Stories:Brand Directory</h1>
+MOST SEARCHED FOR ON FLIPKART:Electronics StoreOPPO A16KVivo Y33TOPPO Reno7 5GBathroom Exhaust FanSamsung Window ACOPPO Reno7 Pro 5GiPhone 13iPhone 13 ProiPhone 13 Pro MaxiPhone 13 MiniFlipkart QuickBooksFlipkart Help CentreBoat 2022 StoreFlipkart Track OrdersFlipkart Manage OrdersFlipkart Return OrdersFlipkart Gift Cards StoreFlipkart Axis Bank Credit CardFlipkart Pay Later
+MOBILES:iPhone 12 64GBiPhone 12 Pro 512GBiPhone 12 128GBVivo Y91iVivo Y11Vivo Y15Vivo Y50Vivo Y12Reno2 FOppo A12Oppo F15Oppo A31Samsung A71Samsung A51Samsung A31Realme X2iPhone 11iPhone 11 ProiPhone 11 Pro MaxMobile Offersiphone x4G MobileNokia MobileSamsung MobileiphoneOppo MobileVivo Mobile
+CAMERA:GoPro Action CameraNikon CameraCanon CameraSony CameraCanon DSLRNikon DSLR
+LAPTOPS:ASUS Celeron Dual CoreRealme Book Prime Core i5 11th GenMicrosoft Surface Go Pentium 128GBBranded LaptopsApple LaptopsAcer LaptopsLenovo LaptopsDell LaptopsAsus LaptopsHP LaptopsGaming Laptops2 in 1 LaptopsBusiness LaptopsLaptopsDell latest laptops 2022HP latest laptops 2022
+TVS:Nokia TVPanasonic TVThomson TVVu TVRealme TVMotorola TVOnePlus TVsLG TVTVSony TVSamsung TVAndroid TelevisionIffalcon TvMi TV
+LARGE APPLIANCES:TelevisionWashing MachinesRefrigeratorsAir ConditionersElectric CookersElectric Jug(Heater) / Travel KettlesInduction CooktopsInverters / stabilizerIrons / Iron BoxMixer Grinder JuicerWet GrindersChimneysMicrowave OvensVacuum CleanersWater PurifierFan
+CLOTHING:Men ShirtsKurta PajamaKurtasMen T-ShirtsJeansSareeDressesKids DressesDesigner Salwar SuitsBraDesigner KurtisTrack PantMen KurtasGym WearParty DressesPalazzo SuitsBoys ClothingGlovesNightyMaxi DressesAnarkaliGownsCulottesSalwar SuitsKurtisDesigner SareesLeggingsShortsGeorgette SareesEthnic WearBriefs & Trunks
+FOOTWEAR:ShoesAdidas ShoesReebok ShoesNike ShoesPuma ShoesBootsBata ShoesWoodland ShoesSkechers ShoesSneakersWomens BootsSports ShoesLoafersSandalsLotto Sports ShoesCasual ShoesWomens Skechers ShoesAsics Sports ShoesFormal ShoesSchool Shoes
+GROCERIES:PhonePe Grocery VoucherHand WashSoapCashew NutsSunflower OilEggsToilet CleanerHarpic Toilet CleanerDettol SoapMustard OilBiscuitsCheesePatanjali AttaFortune OilAashirvaad AttaTea
+BEST SELLING ON FLIPKART:Samsung Inverter AC1.5 Ton Split ACWindow AC 1.5 TonGodrej Double Door FridgeHaier Fridge Double DoorBagsSamsung Galaxy Tab S7+BooksToysCandlesHelmetsWall ClocksBaby FoodChocolatesCyclesCalculatorsLipsticksMaskFastrack WatchesWalletsEarringsGold CoinsRealme Pad MiniHandbagsDIZO Watch SHurricane BSW034Wings Smartwatch
+FURNITURE:Grand Furniture SaleFurnitureSofasBedsDining setsWardrobesMattressesTV UnitsTablesChairsShelvesBean BagsOffice ChairsComputer TableOffice TablesRed SofaWakefit BedsWhite SofaWakefit MattressGreen SofaBlack SofaBrown Sofa
+BGMH:ToysRusDabur VitaToys StoreBooks StoreMusical Instrument StoreEnergy DrinksMilk Drink MixesProtein Supplements
+  </h6>
+</section>
+</body>
+</html>
